@@ -286,8 +286,8 @@ with open(index_html_path, 'w', encoding='utf-8') as f:
     f.write(html_template)
 print(f"Generated index.html: {index_html_path} ({os.path.getsize(index_html_path)/1024/1024:.2f} MB)")
 
-# Write to DD_4.6.5_Reports.html (Matching reference naming)
-named_html_path = os.path.join(base_dir, 'DD_4.6.5_Reports.html')
+# Write to DD_v4.6.5_UAT_Report.html
+named_html_path = os.path.join(base_dir, 'DD_v4.6.5_UAT_Report.html')
 with open(named_html_path, 'w', encoding='utf-8') as f:
     f.write(html_template)
 print(f"Generated {named_html_path} ({os.path.getsize(named_html_path)/1024/1024:.2f} MB)")
